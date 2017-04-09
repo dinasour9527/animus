@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8"/>
-<title>Demo index</title>
+	<title>Bootstrap Template</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- 引入 Bootstrap -->
+	<link rel="stylesheet" th:href="@{/lib/bootstrap/css/bootstrap.min.css}" />
+	<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+	<script th:src="@{/lib/jquery-3.2.0.js}"></script>
+	<!-- 包括所有已编译的插件 -->
+	<script th:src="@{/lib/bootstrap/js/bootstrap.min.js}"></script>
 </head>
 <body>
-	<h1>Demo index</h1>
+	<h1>Bootstrap Template</h1>
 </body>
 </html>
