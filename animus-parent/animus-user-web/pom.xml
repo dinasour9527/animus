@@ -9,8 +9,8 @@
 	</parent>
 	<artifactId>animus-user-web</artifactId>
 	<packaging>war</packaging>
-	<name>AniMus Web Project</name>
-	<description>AniMus Web Project</description>
+	<name>AniMus Web Project User Web</name>
+	<description>AniMus Web Project User Web</description>
 	
 	<dependencies>
 		<dependency>
