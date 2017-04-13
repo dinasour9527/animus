@@ -8,10 +8,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 @Configuration
-public class WebConfiguration {
+public class WebConfig {
 	
 	@Autowired
-	private ServerConfig serverConfig;
+	private LocalServerProperties serverProperties;
 	
 	/**
 	 * dev环境下，配置Server
@@ -22,7 +22,7 @@ public class WebConfiguration {
 		return new EmbeddedServletContainerCustomizer() {
 			@Override
 			public void customize(ConfigurableEmbeddedServletContainer container) {
-				container.setPort(Integer.valueOf(serverConfig.getPort()).intValue());
+				container.setPort(Integer.valueOf(serverProperties.getPort()).intValue());
 			}
 		};
 	}
@@ -35,7 +35,7 @@ public class WebConfiguration {
 		return new EmbeddedServletContainerCustomizer() {
 			@Override
 			public void customize(ConfigurableEmbeddedServletContainer container) {
-				//container.setPort(Integer.valueOf(serverConfig.getPort()).intValue());
+				//container.setPort(Integer.valueOf(serverProperties.getPort()).intValue());
 			}
 		};
 	}

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * #1	locations在缺省情况下，会查找类路径下名为../application.properties的资源文件
  */
 @ConfigurationProperties(prefix = "pre", locations = {"classpath:config/demo.properties"})
-public class DemoConfig {
+public class DemoProperties {
 	private String prop1;
 	private String prop2;
 	public String getProp1() {

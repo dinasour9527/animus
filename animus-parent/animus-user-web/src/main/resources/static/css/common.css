@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+body {
+    font-family: Microsoft Yahei;
+    background-color: #edf1f5;;/* #edf1f5; */
+}
+/* toolbar */
+.animus-toolbar {
+	height: 40px;
+	background: #edf1f5;
+}
+.toolbar-actions {
+	margin-right: 10px;
+	float: right;
+	height:40px;
+	line-height: 40px;
+}
+.lnr-link {
+	font-weight: 600;
+	cursor: pointer;
+	color: #333;
+}
+.lnr-text {
+	color: gray;
+}
+/* head */
+.animus-head {
+	background: #333;
+}
+/** banner */
+.animus-banner {
+	height: 234px;
+}
+/** nav */
+.animus-nav {
+	height: 56px;
+}
+.animus-navbar {
+	padding: 0;
+}

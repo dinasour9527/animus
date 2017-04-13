@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties(prefix = "server", locations = {"classpath:config/server.properties"})
-public class ServerConfig {
+public class LocalServerProperties {
 	
 	private String port;
 	private String address;
