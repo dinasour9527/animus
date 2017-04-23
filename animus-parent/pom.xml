@@ -21,5 +21,6 @@
 	
 	<modules>
 		<module>animus-user-web</module>
+		<module>animus-music-backend</module>
 	</modules>
 </project>
