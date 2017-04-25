@@ -11,4 +11,9 @@ public class PortalController {
 	public String index() {
 		return "index";
 	}
+	
+	@RequestMapping("/main")
+	public String main() {
+		return "main";
+	}
 }

@@ -12,13 +12,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http
+		.headers().frameOptions().sameOrigin().and()
+		.formLogin().and()
 		.authorizeRequests()
 			.antMatchers("/demo").authenticated()
 			.antMatchers("/demo/1").authenticated()
 			.antMatchers("/").permitAll()
-			.and()
-		.formLogin();
-		
+			.antMatchers("/main").permitAll();
 	}
 
 	@Override
@@ -26,7 +26,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 		web.ignoring()
 			.antMatchers("/css/**")
 			.antMatchers("/js/**")
-			.antMatchers("/lib/**");
+			.antMatchers("/lib/**")
+			.antMatchers("/img/**");
 	}
 
 	@Override
