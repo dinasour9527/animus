@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head >
-	<title>Bootstrap Template</title>
+	<title>animus</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<!-- 引入 Bootstrap -->
@@ -13,55 +13,33 @@
 	
 	<link rel="stylesheet" th:href="@{/css/common.css}"/>
 </head>
-<body>
-	<div class="animus-toolbar container">
-		<div class="row clearfix">
-			<div class="toolbar-actions">
-				<a class="lnr-link">登录</a>
-				<span class="lnr-text">or</span>
-				<a class="lnr-link">注册</a>
+<body style="overflow: hidden;">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#do-navbar-collapse">
+					<span class="sr-only">切换导航</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="do-navbar-collapse">
+				<div class="animus-actions navbar-right"> 
+					<a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a>
+					<a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a>
+       			</div>
 			</div>
 		</div>
-	</div>
-	<div class="animus-head">
-		<!-- 横幅 -->
-		<div class="animus-banner"></div>
-		<!-- 导航 -->
-		<div class="animus-nav container">
+	</nav>
+	<iframe th:src="@{/main}" class="animus-main"></iframe>
+	<div class="footer">
+		<div class="footer-player container">
 			<div class="row clearfix">
-				<nav class="navbar navbar-default navbar-inverse" role="navigation">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse"
-								data-target="#do-navbar-collapse">
-							<span class="sr-only">切换导航</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-					</div>
-					<div class="animus-navbar collapse navbar-collapse" id="do-navbar-collapse">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">nav#1</a></li>
-							<li><a href="#">nav#2</a></li>
-							<li><a href="#">nav#3</a></li>
-							<li><a href="#">nav#4</a></li>
-							<li><a href="#">nav#5</a></li>
-							<li><a href="#">nav#6</a></li>
-							<li><a href="#">nav#7</a></li>
-							<li><a href="#">nav#8</a></li>
-				        </ul>
-					</div>
-				</nav>
+			
 			</div>
 		</div>
-	</div>
-	<div class="container">
-		<!-- <div class="row clearfix">
-			<div class="col-md-6 column" style="height:100px;background-color: red;">
-			</div>
-			<div class="col-md-6 column" style="height:100px;background-color: yellow;">
-			</div>
-		</div> -->
 	</div>
 </body>
 </html>

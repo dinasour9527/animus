@@ -1,39 +1,61 @@
 @CHARSET "UTF-8";
-body {
-    font-family: Microsoft Yahei;
-    background-color: #edf1f5;;/* #edf1f5; */
+html, body {
+	height: 100%;	
 }
-/* toolbar */
-.animus-toolbar {
-	height: 40px;
-	background: #edf1f5;
+/* nav */
+.navbar {
+	height: 52px;
+	width: 100%;
+	background-color: #edf1f5;
+	border: 0;
+	margin-bottom: 0;
 }
-.toolbar-actions {
-	margin-right: 10px;
+.navbar-collapse {
+	background-color: #edf1f5;
+}
+.animus-actions {
+	height:52px;
+	line-height: 52px;
+	cursor: default;
+	margin-right: 0;
+}
+.animus-actions a {
 	float: right;
-	height:40px;
-	line-height: 40px;
-}
-.lnr-link {
-	font-weight: 600;
-	cursor: pointer;
+	margin-right: 10px;
+	text-decoration: none;
 	color: #333;
 }
-.lnr-text {
-	color: gray;
+/* footer */
+.footer {
+	width: 100%;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	bottom: 0;
 }
+.footer-player {
+	width: 100%;
+	height: 53px;
+	background-color: #333;
+	position: absolute;
+	left: 0;
+	top: -53px;
+}
+
+/* main iframe */
+iframe.animus-main {
+	border-width: 0;
+	width: 100%;
+	height: 100%;
+}
+
 /* head */
 .animus-head {
 	background: #333;
 }
 /** banner */
-.animus-banner {
-	height: 234px;
-}
-/** nav */
-.animus-nav {
-	height: 56px;
-}
-.animus-navbar {
+.animus-carousel {
 	padding: 0;
 }
+
